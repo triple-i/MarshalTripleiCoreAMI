@@ -1,0 +1,19 @@
+{
+    "name": "marshal/triplei_core_ami",
+    "description":" ",
+    "keywords":[
+    ],
+    "config":{
+        "bin-dir": "bin"
+    },
+    "license": "BSD-3-Clause",
+    "autoload":{
+        "psr-4":{
+            "Marshal\\": "src/"
+        }
+    },
+    "require": {
+        "app2641/aws-client-manager": "*",
+        "aws/aws-sdk-php": "2.*"
+    }
+}

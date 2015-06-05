@@ -1,0 +1,12 @@
+#! /usr/bin/env php
+<?php
+
+use Marshal\MarshalTripleiCoreAmi;
+use Acm\Acm;
+
+require_once __DIR__.'/../src/Bootstrap.php';
+
+$service = new MarshalTripleiCoreAmi();
+$service->setEc2Client(Acm::getEc2());
+$service->execute();
+
